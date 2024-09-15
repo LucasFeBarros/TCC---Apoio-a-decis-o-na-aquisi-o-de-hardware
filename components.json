@@ -2,22 +2,46 @@
     "components": {
       "processors": [
         {
-          "name": "Ryzen 5600GT",
+          "name": "Ryzen 5600GT com video integrado",
+          "price": 847,
+          "weight": 0.7,
+          "performance": "Média",
+          "purchase_link": "https://www.kabum.com.br/produto/520368/processador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box?awc=17729_1726420365_1795d03a4b01403c8091bf5bfe1f1968&utm_source=AWIN&utm_medium=AFILIADOS&utm_campaign=fevereiro24&utm_content=2024-09-15&utm_term=691737"
+        },
+        {
+          "name": "Ryzen 5600",
           "price": 800,
-          "weight": 0.5,
-          "performance": "Alta"
+          "weight": 0.8,
+          "performance": "Média",
+          "purchase_link": "https://www.pichau.com.br/processador-amd-ryzen-5-5600-6-core-12-threads-3-5ghz-4-4ghz-turbo-cache-35mb-am4-100-100000927box?utm_source=meupcnet&utm_medium=afiliados&utm_campaign=meupcnet"
         },
         {
-          "name": "Intel Core i3 10100",
+          "name": "Intel Core i3 10105 com video integrado",
           "price": 618,
-          "weight": 0.4,
-          "performance": "Média"
+          "weight": 0.5,
+          "performance": "Média",
+          "purchase_link": "https://www.kabum.com.br/produto/181065/processador-intel-core-i3-10105-3-7ghz-4-4ghz-max-turbo-cache-6mb-quad-core-8-threads-lga-1200-video-integrado-bx8070110105?awc=17729_1726420683_7d5e6238418868137b221e522703f91e&utm_source=AWIN&utm_medium=AFILIADOS&utm_campaign=fevereiro24&utm_content=2024-09-15&utm_term=691737"
         },
         {
-          "name": "AMD Ryzen 7 5800X",
+          "name": "Intel Core i5 12400F",
+          "price": 675,
+          "weight": 0.5,
+          "performance": "Média",
+          "purchase_link": "https://www.terabyteshop.com.br/produto/20072/processador-intel-core-i5-12400f-25ghz-44ghz-turbo-12-geracao-6-cores-12-threads-lga-1700-bx8071512400f?p=139255&utm_source=craftmybox&utm_medium=afiliados&utm_campaign=craftmybox"
+        },
+        {
+          "name": "AMD Ryzen 7 5700X",
+          "price": 1199,
+          "weight": 1.1,
+          "performance": "Alta",
+          "purchase_link": "https://www.pichau.com.br/processador-amd-ryzen-7-5700x-8-core-16-threads-3-4ghz-4-6ghz-turbo-cache-36mb-am4-100-100000926wof?utm_source=meupcnet&utm_medium=afiliados&utm_campaign=meupcnet"
+        },
+        {
+          "name": "AMD Ryzen 7 5800X3D",
           "price": 2000,
-          "weight": 0.6,
-          "performance": "Alta"
+          "weight": 1.1,
+          "performance": "Alta",
+          "purchase_link": "https://www.pichau.com.br/processador-amd-ryzen-7-5800x3d-8-core-16-threads-3-4ghz-4-5ghz-turbo-cache-100mb-am4-100-100000651wof?utm_source=meupcnet&utm_medium=afiliados&utm_campaign=meupcnet"
         }
       ],
       "gpus": [
@@ -25,79 +49,135 @@
           "name": "Vega integrada do processador",
           "price": 0,
           "weight": 0.1,
-          "performance": "Baixa"
+          "performance": "Baixa",
+          "purchase_link": "Ele é integrado ao processador não tendo que investir em uma placa de video OFFBOARD"
+        },
+        {
+          "name": "RX 6600",
+          "price": 1200,
+          "weight": 0.8,
+          "performance": "Média+",
+          "purchase_link": "https://www.kabum.com.br/produto/235984/placa-de-video-rx-6600-cld-8g-asrock-amd-radeon-8gb-gddr6-90-ga2rzz-00uanf?awc=17729_1726421651_e3ad462551ff74adef2b16c52778970f&utm_source=AWIN&utm_medium=AFILIADOS&utm_campaign=fevereiro24&utm_content=2024-09-15&utm_term=691737"
         },
         {
           "name": "GTX 1650",
-          "price": 1500,
-          "weight": 0.7,
-          "performance": "Média"
+          "price": 930,
+          "weight": 0.5,
+          "performance": "Média",
+          "purchase_link": "https://www.amazon.com.br/dp/B08GQ29HRP?tag=craftmybox-20&linkCode=osi&th=1&psc=1&smid=A2TWJNT8I8JEOY"
         },
         {
-          "name": "RTX 3070",
-          "price": 4500,
+          "name": "RTX 4060",
+          "price": 1930,
           "weight": 1.5,
-          "performance": "Alta"
+          "performance": "Muito Alta",
+          "purchase_link": "https://www.kabum.com.br/produto/469132/placa-de-video-rtx-4060-ventus-2x-black-oc-msi-nvidia-geforce-8gb-gddr6-dlss-ray-tracing"
+        },
+        {
+          "name": "RTX 4070",
+          "price": 4200,
+          "weight": 1.5,
+          "performance": "Muito Alta+",
+          "purchase_link": "https://www.kabum.com.br/produto/517751/placa-de-video-rtx-4070-super-gigabyte-windforce-nvidia-geforce-12gb-gddr6x-dlss-ray-tracing-gv-n407swf3oc-12gd"
         }
       ],
       "ram": [
         {
-          "name": "8GB DDR4 3200mhz",
+          "name": "8GB DDR4 3200mhz Kingston",
           "price": 160,
-          "weight": 0.1,
-          "performance": "Média"
+          "weight": 0.4,
+          "performance": "Baixa",
+          "purchase_link": "https://www.mercadolivre.com.br/memoria-kingston-de-8gb-dimm-ddr4-3200mh-kf432c16bb8/p/MLB18570748#polycard_client=mshops-appearance-api&type=product&tracking_id=24cf41d5-b5f7-4e5d-8d4e-ff4373ea9b8e&source=eshops&wid=MLB3842926151&sid=storefronts"
         },
         {
           "name": "16GB DDR4 3200mhz 2x8",
           "price": 320,
-          "weight": 0.2,
-          "performance": "Alta"
+          "weight": 0.8,
+          "performance": "Alta",
+          "purchase_link": "https://www.kabum.com.br/produto/193500/memoria-ram-kingston-fury-beast-16gb-2x8gb-3200mhz-ddr4-cl16-preto-kf432c16bbk2-16?awc=17729_1726422051_0491984c7fa81ddabbd76fb1e48a44c4&utm_source=AWIN&utm_medium=AFILIADOS&utm_campaign=fevereiro24&utm_content=2024-09-15&utm_term=691737"
         },
         {
           "name": "32GB DDR4 3600mhz 2x16",
-          "price": 800,
-          "weight": 0.4,
-          "performance": "Muito Alta"
+          "price": 540,
+          "weight": 1.2,
+          "performance": "Alta",
+          "purchase_link": "https://www.mercadolivre.com.br/memoria-gamer-16gb-dimm-ddr4-3200mhz-fury-beast-black/p/MLB19174271#polycard_client=mshops-appearance-api&type=product&tracking_id=53f9b07d-cfbe-43eb-8468-ea9dbe77f7e0&source=eshops&wid=MLB3671569337&sid=storefronts"
         }
       ],
       "storage": [
         {
-          "name": "SSD 240GB",
-          "price": 250,
+          "name": "SSD Sata 240GB",
+          "price": 115,
           "weight": 0.2,
-          "performance": "Rápido"
+          "performance": "Baixa",
+          "purchase_link": "https://www.kabum.com.br/produto/105105/ssd-sata-rise-mode-line-240gb-2-5-leitura-535mb-s-gravacao-435mb-s-preto-rm-ssd-240?awc=17729_1726422146_1ce893ea1598a0d31fea539e17f96a4e&utm_source=AWIN&utm_medium=AFILIADOS&utm_campaign=fevereiro24&utm_content=2024-09-15&utm_term=691737"
+        },
+        {
+          "name": "SSD Nvme M2 520GB",
+          "price": 286,
+          "weight": 0.4,
+          "performance": "Baixa",
+          "purchase_link": "https://www.amazon.com.br/dp/B0BBWJH1P8?tag=craftmybox-20&linkCode=osi&th=1&psc=1&smid=A32JO2YPC2VEB4"
         },
         {
           "name": "SSD 1TB NVMe",
-          "price": 500,
-          "weight": 0.15,
-          "performance": "Muito Rápido"
+          "price": 420,
+          "weight": 0.8,
+          "performance": "Alta",
+          "purchase_link": "https://produto.mercadolivre.com.br/MLB-3638503555-ssd-m2-1tb-kingston-nvme2-pcie-40-3500-mbs-cor-preto-_JM#polycard_client=mshops-appearance-api&type=item&tracking_id=d9cdc1fd-2962-4e7a-9cc2-9e155b159b84&source=eshops"
         }
       ],
       "motherboards": [
         {
-          "name": "B450M",
-          "price": 600,
-          "weight": 0.8,
-          "performance": "Média"
+          "name": "MSI A520M-A PRO",
+          "price": 420,
+          "weight": 0.7,
+          "performance": "Média",
+          "purchase_link": "https://www.pichau.com.br/placa-mae-msi-a520m-a-pro-ddr4-socket-am4-chipset-amd-a520?utm_source=meupcnet&utm_medium=afiliados&utm_campaign=meupcnet"
         },
         {
-          "name": "X570",
-          "price": 1200,
+          "name": "MSI B550M Pro-VDH WiFi",
+          "price": 729,
+          "weight": 0.95,
+          "performance": "Média",
+          "purchase_link": "https://www.kabum.com.br/produto/114338/placa-mae-msi-b550m-pro-vdh-wifi-amd-am4-matx?awc=17729_1726422438_d2179a16a50f0547f48437678c8b20c1&utm_source=AWIN&utm_medium=AFILIADOS&utm_campaign=fevereiro24&utm_content=2024-09-15&utm_term=691737"
+        },
+        {
+          "name": "Gigabyte B550M Aorus Elite",
+          "price": 799,
+          "weight": 0.92,
+          "performance": "Média",
+          "purchase_link": "https://www.pichau.com.br/placa-mae-gigabyte-b550m-aorus-elite-ddr4-socket-am4-chipset-amd-b550?utm_source=meupcnet&utm_medium=afiliados&utm_campaign=meupcnet"
+        },
+        {
+          "name": "Gigabyte H510M H V2",
+          "price": 480,
+          "weight": 0.6,
+          "performance": "Baixa",
+          "purchase_link": "https://www.pichau.com.br/placa-mae-gigabyte-h510m-h-v2-ddr4-lga-1200-m-atx-chipset-intel-h470-h510m-h-v2?utm_source=meupcnet&utm_medium=afiliados&utm_campaign=meupcnet"
+        },
+        {
+          "name": "Asus Prime H570m-plus",
+          "price": 1400,
           "weight": 1.2,
-          "performance": "Alta"
+          "performance": "Alta",
+          "purchase_link": "https://www.mercadolivre.com.br/placa-me-asus-prime-h570m-plus-intel-lga-1200-matx-4xddr4/p/MLB22663468#polycard_client=mshops-appearance-api&type=product&tracking_id=6e97bd12-09a4-410b-a1ac-29dd1612eef3&source=eshops&wid=MLB4278828690&sid=storefronts"
         }
       ],
       "powerSupplies": [
         {
-          "name": "Fonte 500W",
-          "price": 300,
-          "weight": 1.2
+          "name": "Fonte Gamemax GS600, 600W",
+          "price": 226,
+          "weight": 1.2,
+          "performance": "Média",
+          "purchase_link": "https://www.terabyteshop.com.br/produto/17493/fonte-gamemax-gs600-600w-80-plus-white-pfc-ativo?p=139255&utm_source=craftmybox&utm_medium=afiliados&utm_campaign=craftmybox"
         },
         {
-          "name": "Fonte 750W",
-          "price": 600,
-          "weight": 1.5
+          "name": "Fonte XPG Kyber, 850W",
+          "price": 530,
+          "weight": 1.5,
+          "performance": "Alta",
+          "purchase_link": "https://www.kabum.com.br/produto/471343/fonte-xpg-kyber-850w-80-plus-gold-com-cabo-preto-kyber850g-bkcbr?awc=17729_1726422890_61531efaa8b05fa1a97e09dd266cf67f&utm_source=AWIN&utm_medium=AFILIADOS&utm_campaign=fevereiro24&utm_content=2024-09-15&utm_term=691737"
         }
       ]
     }

@@ -1,2 +1,5 @@
+Falta colocar os gabinetes e watercooler se for necessario 
+verificar e integrar compatibilidade de processador e placa mãe
+E verificar se processador precisa de placa de video ou não.
 
 
