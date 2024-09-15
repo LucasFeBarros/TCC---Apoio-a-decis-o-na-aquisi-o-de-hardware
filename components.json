@@ -8,8 +8,8 @@
           "performance": "Alta"
         },
         {
-          "name": "Intel Core i3 10100F",
-          "price": 900,
+          "name": "Intel Core i3 10100",
+          "price": 618,
           "weight": 0.4,
           "performance": "Média"
         },
@@ -43,13 +43,13 @@
       "ram": [
         {
           "name": "8GB DDR4 3200mhz",
-          "price": 140,
+          "price": 160,
           "weight": 0.1,
           "performance": "Média"
         },
         {
           "name": "16GB DDR4 3200mhz 2x8",
-          "price": 280,
+          "price": 320,
           "weight": 0.2,
           "performance": "Alta"
         },
