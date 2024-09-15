@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('peças2.jpg'); /* Coloque a imagem das peças de computador aqui */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.85); /* Fundo escuro com transparência */
+    padding: 50px 30px; /* Mais espaçamento para a caixa */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
+    width: 100%;
+    max-width: 600px; /* Largura máxima */
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f1f1f1; /* Cor mais clara para o título */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra no título */
+  }
+  
+  #question-container {
+    margin-bottom: 30px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #f8f9fa;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Aumenta o tamanho dos botões de rádio */
+  }
+  
+  label {
+    font-size: 1.2rem;
+    color: #e9ecef;
+  }
+  
+  #next-button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra no botão */
+  }
+  
+  #next-button:hover {
+    background-color: #218838;
+  }
+  
+  #recommendation-container {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    color: #28a745;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #ffc107; /* Cor amarela para a opção selecionada */
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px 20px; /* Ajusta o padding para telas menores */
+    }
+  
+    h1 {
+      font-size: 2rem; /* Tamanho menor do título em telas pequenas */
+    }
+  
+    label {
+      font-size: 1.1rem; /* Ajuste para o tamanho das opções */
+    }
+  }
+  
