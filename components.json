@@ -1,0 +1,105 @@
+{
+    "components": {
+      "processors": [
+        {
+          "name": "Ryzen 5600GT",
+          "price": 800,
+          "weight": 0.5,
+          "performance": "Alta"
+        },
+        {
+          "name": "Intel Core i3 10100F",
+          "price": 900,
+          "weight": 0.4,
+          "performance": "Média"
+        },
+        {
+          "name": "AMD Ryzen 7 5800X",
+          "price": 2000,
+          "weight": 0.6,
+          "performance": "Alta"
+        }
+      ],
+      "gpus": [
+        {
+          "name": "Vega integrada do processador",
+          "price": 0,
+          "weight": 0.1,
+          "performance": "Baixa"
+        },
+        {
+          "name": "GTX 1650",
+          "price": 1500,
+          "weight": 0.7,
+          "performance": "Média"
+        },
+        {
+          "name": "RTX 3070",
+          "price": 4500,
+          "weight": 1.5,
+          "performance": "Alta"
+        }
+      ],
+      "ram": [
+        {
+          "name": "8GB DDR4 3200mhz",
+          "price": 140,
+          "weight": 0.1,
+          "performance": "Média"
+        },
+        {
+          "name": "16GB DDR4 3200mhz 2x8",
+          "price": 280,
+          "weight": 0.2,
+          "performance": "Alta"
+        },
+        {
+          "name": "32GB DDR4 3600mhz 2x16",
+          "price": 800,
+          "weight": 0.4,
+          "performance": "Muito Alta"
+        }
+      ],
+      "storage": [
+        {
+          "name": "SSD 240GB",
+          "price": 250,
+          "weight": 0.2,
+          "performance": "Rápido"
+        },
+        {
+          "name": "SSD 1TB NVMe",
+          "price": 500,
+          "weight": 0.15,
+          "performance": "Muito Rápido"
+        }
+      ],
+      "motherboards": [
+        {
+          "name": "B450M",
+          "price": 600,
+          "weight": 0.8,
+          "performance": "Média"
+        },
+        {
+          "name": "X570",
+          "price": 1200,
+          "weight": 1.2,
+          "performance": "Alta"
+        }
+      ],
+      "powerSupplies": [
+        {
+          "name": "Fonte 500W",
+          "price": 300,
+          "weight": 1.2
+        },
+        {
+          "name": "Fonte 750W",
+          "price": 600,
+          "weight": 1.5
+        }
+      ]
+    }
+  }
+  
