@@ -17,7 +17,7 @@ const followUpQuestions = {
   jogo: {
     question: "Quais jogos você planeja jogar?",
     key: "games",
-    options: ["Fortnite", "League of Legends", "Call of Duty", "GTA V", "Outros"]
+    options: ["Fortnite", "League of Legends", "Call of Duty", "GTA V", "CS2", "Outros"]
   },
   trabalho: {
     question: "Quais ferramentas/programas você pretende usar?",
