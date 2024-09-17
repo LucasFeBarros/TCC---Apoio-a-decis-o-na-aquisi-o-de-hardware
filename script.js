@@ -109,18 +109,19 @@ function addFollowUpQuestion(type) {
  // Função para gerar recomendação baseada nas respostas e aplicar o AHP
 async function generateRecommendation() {
   const recommendationContainer = document.getElementById('recommendation-container');
-  const { budget } = answers;
+  // GAMBIARRA:
+  const budget = parseInt(answers.budget[0].split(' ')[2]);
 
   // Carregar componentes do JSON
   const components = await loadComponents();
 
   // Filtrar componentes com base no orçamento do usuário
-  const filteredProcessors = components.processors.filter(c => c.price <= parseInt(budget[0].replace('R$', '').replace('.', '')));
-  const filteredGPUs = components.gpus.filter(c => c.price <= parseInt(budget[0].replace('R$', '').replace('.', '')));
-  const filteredRAM = components.ram.filter(c => c.price <= parseInt(budget[0].replace('R$', '').replace('.', '')));
-  const filteredStorage = components.storage.filter(c => c.price <= parseInt(budget[0].replace('R$', '').replace('.', '')));
-  const filteredMotherboards = components.motherboards.filter(c => c.price <= parseInt(budget[0].replace('R$', '').replace('.', '')));
-  const filteredPowerSupplies = components.powerSupplies.filter(c => c.price <= parseInt(budget[0].replace('R$', '').replace('.', '')));
+  const filteredProcessors = components.processors.filter(c => c.price <= budget);
+  const filteredGPUs = components.gpus.filter(c => c.price <= budget);
+  const filteredRAM = components.ram.filter(c => c.price <= budget);
+  const filteredStorage = components.storage.filter(c => c.price <= budget);
+  const filteredMotherboards = components.motherboards.filter(c => c.price <= budget);
+  const filteredPowerSupplies = components.powerSupplies.filter(c => c.price <= budget);
   
   // Critérios de peso para o AHP
   const criteriaWeights = { price: 0.5, weight: 0.5 };
@@ -133,15 +134,17 @@ async function generateRecommendation() {
   const bestMotherboard = ahpCalculate(filteredMotherboards, criteriaWeights)[0];
   const bestPowerSupply = ahpCalculate(filteredPowerSupplies, criteriaWeights)[0];
 
+  console.log(bestProcessor);
+
   // Exibir a recomendação com o link de compra
   let recommendation = `
     <h2>Sua Configuração Recomendada:</h2>
-    <p><strong>Processador:</strong> ${bestProcessor.name} (<a href="${bestProcessor.purchase_link}" target="_blank">Comprar</a>)</p>
-    <p><strong>Placa de Vídeo:</strong> ${bestGPU.name} (<a href="${bestGPU.purchase_link}" target="_blank">Comprar</a>)</p>
-    <p><strong>Memória RAM:</strong> ${bestRAM.name} (<a href="${bestRAM.purchase_link}" target="_blank">Comprar</a>)</p>
-    <p><strong>Armazenamento:</strong> ${bestStorage.name} (<a href="${bestStorage.purchase_link}" target="_blank">Comprar</a>)</p>
-    <p><strong>Placa-mãe:</strong> ${bestMotherboard.name} (<a href="${bestMotherboard.purchase_link}" target="_blank">Comprar</a>)</p>
-    <p><strong>Fonte de Alimentação:</strong> ${bestPowerSupply.name} (<a href="${bestPowerSupply.purchase_link}" target="_blank">Comprar</a>)</p>
+    <p><strong>Processador:</strong> ${bestProcessor.name} (R$${1 / bestProcessor.priceScore}) (<a href="${bestProcessor.purchase_link}" target="_blank">Comprar</a>)</p>
+    <p><strong>Placa de Vídeo:</strong> ${bestGPU.name} (R$${1 / bestGPU.priceScore}) (<a href="${bestGPU.purchase_link}" target="_blank">Comprar</a>)</p>
+    <p><strong>Memória RAM:</strong> ${bestRAM.name} (R$${1 / bestRAM.priceScore}) (<a href="${bestRAM.purchase_link}" target="_blank">Comprar</a>)</p>
+    <p><strong>Armazenamento:</strong> ${bestStorage.name} (R$${1 / bestStorage.priceScore}) (<a href="${bestStorage.purchase_link}" target="_blank">Comprar</a>)</p>
+    <p><strong>Placa-mãe:</strong> ${bestMotherboard.name} (R$${1 / bestMotherboard.priceScore}) (<a href="${bestMotherboard.purchase_link}" target="_blank">Comprar</a>)</p>
+    <p><strong>Fonte de Alimentação:</strong> ${bestPowerSupply.name} (R$${1 / bestPowerSupply.priceScore}) (<a href="${bestPowerSupply.purchase_link}" target="_blank">Comprar</a>)</p>
   `;
 
   recommendationContainer.innerHTML = recommendation;
